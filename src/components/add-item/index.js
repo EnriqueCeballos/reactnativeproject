@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, TextInput, View } from "react-native";
+import { View, TextInput, Button } from "react-native";
 import { styles } from "./styles";
 
 const AddItem = ({ task, onHandleTask, onHandleChange }) => {
@@ -8,13 +8,13 @@ const AddItem = ({ task, onHandleTask, onHandleChange }) => {
       <TextInput
         style={styles.input}
         value={task}
-        placeholder="Enter Task"
+        placeholder="Agregar pedido"
         onChangeText={onHandleChange}
-      ></TextInput>
+      />
       <Button
-        disabled={!task} //Si la condicion es Falsa se habilita el boton para enviar
+        disabled={!task}
         title="Add"
-        color={"#f6f5"}
+        color="#000"
         onPress={onHandleTask}
       />
     </View>

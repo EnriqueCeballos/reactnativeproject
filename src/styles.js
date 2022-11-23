@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
   listContainer: {
     marginHorizontal: 20,
   },
-  listTittle: {
+  listTitle: {
     fontSize: 10,
     fontWeight: "bold",
     marginBottom: 10,
@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
   },
   listItemContainer: {
     paddingVertical: 20,
-    backgroundColor: "#9a648f",
+    backgroundColor: "green",
     borderRadius: 5,
     shadowColor: "#000",
     shadowOffset: {
@@ -49,7 +49,12 @@ export const styles = StyleSheet.create({
     marginTop: 50,
     paddingBottom: 40,
   },
-  selectedTask: { fontSize: 20, color: "#212121", fontWeight: "bold" },
+  selectedTask: {
+    fontSize: 20,
+    color: "#212121",
+    fontWeight: "bold",
+    paddingVertical: 20,
+  },
 
   modalDetailContainer: {
     paddingVertical: 20,
@@ -58,6 +63,17 @@ export const styles = StyleSheet.create({
   },
   modalButtonContainer: {
     width: "70%",
-    flexDirection: "center",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    marginHorizontal: 20,
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  modalDetailText: {
+    fontSize: 14,
+    color: "#212121",
   },
 });
